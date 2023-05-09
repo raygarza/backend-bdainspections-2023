@@ -65,6 +65,11 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "featured_article": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
