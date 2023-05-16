@@ -35,7 +35,7 @@
     "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
@@ -56,7 +56,8 @@
       "type": "string"
     },
     "min_read": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "article_body": {
       "type": "customField",
@@ -64,12 +65,13 @@
         "output": "HTML",
         "preset": "rich"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
     },
     "featured_article": {
       "type": "boolean",
       "default": false,
-      "required": false
+      "required": true
     }
   }
 }
